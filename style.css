@@ -1,0 +1,154 @@
+body{
+    background-image: url(images/papegbg.png);
+    background-repeat: repeat;
+}
+#image{
+    width: 800px;
+    height: 600px;
+    border: 20px solid white;
+    margin: 40px auto;
+    background-color: #999;
+    position: relative;
+    perspective: 600px;
+}
+#image > div{
+
+    /* border: 1px solid blue; */
+    height: 600px;
+    width: 160px;
+    /* padding: 50px; */
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url(images/lake.jpg);
+   transition: 0.5s;
+
+}
+#image >  div:nth-child(2){
+background-position-x: -160px ;
+  left: 160px;
+  /* transform: translateX(-33px) rotateY(-35deg) scaleY(1.075); */
+}
+
+  #image > div:nth-child(3){
+    /* left: 320px; */
+left: calc(160px*2);
+background-position-x: calc(-160px * 2) ;
+/* transform: translateX(-66px) rotateY(35deg) scaleY(1.075); */
+
+}
+   
+#image > div:nth-child(4){
+        background-position-x: calc(-160px * 3);
+        left: 480px;
+        /* transform: translateX(-99px) rotateY(-35deg) scaleY(1.075); */
+
+    }
+
+#image >  div:nth-child(5){
+            background-position-x: calc(-160px * 4);
+            left: 640px;
+            /* transform: translateX(-132px) rotateY(35deg) scaleY(1.075); */
+        }
+
+        /* /hover/ */
+        #image:hover >  div:nth-child(2){
+            background-position-x: -160px ;
+              left: 160px;
+              transform: translateX(-33px) rotateY(-35deg) scaleY(1.075);
+            }
+            
+              #image:hover > div:nth-child(3){
+                /* left: 320px; */
+            left: calc(160px*2);
+            background-position-x: calc(-160px * 2) ;
+            transform: translateX(-66px) rotateY(35deg) scaleY(1.075);
+            
+            }
+               
+            #image:hover > div:nth-child(4){
+                    background-position-x: calc(-160px * 3);
+                    left: 480px;
+                    transform: translateX(-99px) rotateY(-35deg) scaleY(1.075);
+            
+                }
+            
+            #image:hover >  div:nth-child(5){
+                        background-position-x: calc(-160px * 4);
+                        left: 640px;
+                        transform: translateX(-132px) rotateY(35deg) scaleY(1.075);
+                    }
+            
+        #image >  div > div{
+            width: inherit;
+            height: inherit;
+            /* background-color: blue; */
+        }       
+        #image >  div:nth-child(1) > div{
+            background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.425), rgba(0, 0, 0, 0.315));
+            opacity: 0;
+        }
+        #image >  div:nth-child(2) > div{
+            background-image: linear-gradient(-90deg,rgba(255, 255, 255, 0.616), rgba(0, 0, 0, 0.541));
+            opacity: 0;
+        }
+
+            #image >  div:nth-child(3) > div{
+                background-image: linear-gradient(90deg,rgba(184, 179, 179, 0.616), rgba(0, 0, 0, 0.658));
+                opacity: 0;
+            }
+                #image >  div:nth-child(4) > div{
+                    background-image: linear-gradient(-90deg,rgba(255, 255, 255, 0.288), rgba(0, 0, 0, 0.836));
+                    opacity: 0;
+                }
+                    #image >  div:nth-child(5) > div{
+                        background-image: linear-gradient(90deg,rgba(184, 179, 179, 0.199), rgba(0, 0, 0, 0.719));
+                    opacity: 0;
+                    }
+                    #image >  div:nth-child(1):hover > div{
+                        background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.425), rgba(0, 0, 0, 0.315));
+                        opacity: 1;
+                    }
+                    #image >  div:nth-child(2):hover > div{
+                        background-image: linear-gradient(-90deg,rgba(255, 255, 255, 0.616), rgba(0, 0, 0, 0.541));
+                        opacity: 1;
+                    }
+            
+                        #image >  div:nth-child(3):hover > div{
+                            background-image: linear-gradient(90deg,rgba(184, 179, 179, 0.616), rgba(0, 0, 0, 0.658));
+                            opacity: 1;
+                        }
+                            #image >  div:nth-child(4):hover > div{
+                                background-image: linear-gradient(-90deg,rgba(255, 255, 255, 0.288), rgba(0, 0, 0, 0.836));
+                                opacity: 1;
+                            }
+                                #image >  div:nth-child(5):hover > div{
+                                    background-image: linear-gradient(90deg,rgba(184, 179, 179, 0.199), rgba(0, 0, 0, 0.719));
+                                opacity:1 ;}
+                                
+#image > li{
+    position: relative;
+    z-index: -1;
+    left:680px;
+    top: 100px;
+    list-style: none;
+    font-family: arial;
+}
+
+#image > li > a{ 
+    text-decoration: none; 
+font-weight: 700;
+color:whitesmoke;
+font-family: arial;
+z-index: -1;
+
+}
+#image .first{
+top: 100px;
+}
+#image .second{
+    top: 200px;
+    }
+#image .third{
+top: 300px;
+transform: rotateX(20deg) translateX(20px);
+font-size: 2em;        }
